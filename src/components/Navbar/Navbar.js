@@ -19,46 +19,46 @@ import { Button } from '../../globalStyles';
 function Navbar() {
 
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
+    // const [button, setButton] = useState(true);
 
     const [homeClick, setHomeClick] = useState(false);
-    const [servicesClick, setServicesClick] = useState(false);
-    const [productsClick, setProductsClick] = useState(false);
+    // const [servicesClick, setServicesClick] = useState(false);
+    // const [productsClick, setProductsClick] = useState(false);
 
     const handleHomeClick = () => {
         setHomeClick(true);
-        setProductsClick(false);
-        setServicesClick(false);
+        // setProductsClick(false);
+        // setServicesClick(false);
     }
-    const handleServicesClick = () => {
-        setHomeClick(false);
-        setProductsClick(false);
-        setServicesClick(true);
-    }
-    const handleProductsClick = () => {
-        setHomeClick(false);
-        setProductsClick(true);
-        setServicesClick(false);
-    }
+    // const handleServicesClick = () => {
+    //     setHomeClick(false);
+    //     setProductsClick(false);
+    //     setServicesClick(true);
+    // }
+    // const handleProductsClick = () => {
+    //     setHomeClick(false);
+    //     setProductsClick(true);
+    //     setServicesClick(false);
+    // }
 
     const handleClick = () => setClick(!click);
 
     const closeMobileMenu = () => setClick(false);
 
-    const showButton = () => {
-        // so if the screensize is <= 960px then set button state to false
-        if (window.innerwidth <= 960) {
-            setButton(false)
-        } else {
-            setButton(true)
-        }
-    }
+    // const showButton = () => {
+    //     // so if the screensize is <= 960px then set button state to false
+    //     if (window.innerwidth <= 960) {
+    //         setButton(false)
+    //     } else {
+    //         setButton(true)
+    //     }
+    // }
 
-    useEffect(() => {
-        showButton();
-    }, [])
+    // useEffect(() => {
+    //     showButton();
+    // }, [])
 
-    window.addEventListener('resize', showButton);
+    // window.addEventListener('resize', showButton);
 
     return (
         <>
@@ -73,6 +73,9 @@ function Navbar() {
                             {click ? <FaTimes /> : <FaBars />}
                         </HamburgerIcon>
                         <NavMenu onClick={handleClick} click={click} >
+                            <NavLinks>
+                                Already existing ?
+                            </NavLinks>
                             <NavLinks to='/user' onClick={closeMobileMenu}>
                                 User
                             </NavLinks>
