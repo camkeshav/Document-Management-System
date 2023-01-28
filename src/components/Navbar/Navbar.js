@@ -73,11 +73,11 @@ function Navbar() {
                             {click ? <FaTimes /> : <FaBars />}
                         </HamburgerIcon>
                         <NavMenu onClick={handleClick} click={click} >
-                            <NavLinks to='/admin' onClick={closeMobileMenu}>
-                                Admin
-                            </NavLinks>
                             <NavLinks to='/user' onClick={closeMobileMenu}>
                                 User
+                            </NavLinks>
+                            <NavLinks to='/admin' onClick={closeMobileMenu}>
+                                Admin
                             </NavLinks>
                             {/* <NavItem onClick={handleHomeClick} homeClick={homeClick}>
                             <NavLinks to='/' onClick={closeMobileMenu}>
