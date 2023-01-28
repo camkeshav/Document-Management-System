@@ -73,6 +73,9 @@ function Navbar() {
                             {click ? <FaTimes /> : <FaBars />}
                         </HamburgerIcon>
                         <NavMenu onClick={handleClick} click={click} >
+                            {/* <NavLinks to='/feature' onClick={closeMobileMenu}>
+                                Features
+                            </NavLinks> */}
                             <NavLinks>
                                 Already existing ?
                             </NavLinks>

@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
-
 export const InfoSec = styled.div`
     color: #fff;
-    padding: 160px 0;
+    padding: 60px 0px;
     background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
-    overflow: hidden;
+
     background-size: cover;
-    height: 92vh;
-    overflow-x: hidden;
+    height: 89vh;
 `
 
 export const InfoRow = styled.div`
@@ -47,6 +45,7 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+  background: transparent;
 
   @media (min-width: 480px) and (max-width: 1200px) {
     padding-bottom: 65px;

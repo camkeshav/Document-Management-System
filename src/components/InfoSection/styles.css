@@ -40,3 +40,7 @@ font-size: larger;
 font-size: large;
 margin-left: 3%;
 }
+
+.TextWrapper {
+    background-color: transparent;
+}
