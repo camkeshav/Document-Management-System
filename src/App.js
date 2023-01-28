@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Admin from './pages/Admin/admin';
 import User from './pages/User/user';
 import Cover from './pages/particlles';
-// import Features from './components/Features/feature';
+import Features from './components/Feature/feature';
 
 function App() {
     return (
@@ -23,7 +23,7 @@ function App() {
             <Switch>
                 <Route path='/' exact component={Home} />
                 {/* {/* <Route path='/services' component={Services} /> */}
-                {/* <Route path='/feature' component={Features} /> */}
+                <Route path='/feature' component={Features} />
                 {/* <Route path='/products' component={Products} /> */}
                 <Route path='/admin' exact component={Admin} />
                 <Route path='/user' exact component={User} />

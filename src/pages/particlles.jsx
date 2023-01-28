@@ -15,7 +15,7 @@ export default function Cover() {
     };
 
     return (
-        <div id="particles-js" style={{ zIndex: -1 }}>
+        <div id="particles-js" style={{ zIndex: -3 }}>
             <Particles
                 id="tsparticles"
                 init={particlesInit}
@@ -24,10 +24,10 @@ export default function Cover() {
                     fpsLimit: 120,
                     interactivity: {
                         events: {
-                            onClick: {
-                                enable: true,
-                                mode: "push"
-                            },
+                            // onClick: {
+                            //     enable: true,
+                            //     mode: "push"
+                            // },
                             onHover: {
                                 enable: true,
                                 mode: 'grab',
